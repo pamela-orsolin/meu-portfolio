@@ -1,0 +1,134 @@
+/*primeiras propriedades:*/
+* {
+    /*define a área de margem nos quatros lados do elemento*/
+    margin:0;
+    /* define entre o conteúdo de um elemento e duas bordas*/
+    padding:0;
+    /*para configurar uma ou mais propriedades de concorto*/
+    outline:0;
+}
+
+body {
+/*definição da nossa fonte do body*/
+font-family:"Roboto", sans-serif;
+margin:0; 
+}
+
+li {
+     /*retirando as bolinhas das nossas listas*/
+     list-style:none;
+}
+
+.header-menu {
+    /*torna nosso elemento container automaticamente transformado todo os seus filho diretos em flex itens*/
+    display:flex;
+    position:fixed; /*deixa o nosso header fixo*/
+    width:100%; /*largura*/
+    padding:8px; /*espaçamnto da pag*/
+    padding-bottom: 32px;
+    padding-top: 32px;
+    height: 60px;
+    background-color: #724796;
+}
+
+.header-menu nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.lista-menu{
+    display: flex;
+    justify-content: space-evenly; /* espaço entre elas seja igual*/
+    width: 50%;
+    align-items: center;
+}
+
+/* pegando os itens com as tags de dentro da nossa lista*/
+.lista-menu li>a{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: inherit;
+}
+
+.principal{
+    height: 100vh;
+    display: flex;
+    background-color: #EAEAEA;
+}
+
+/* o container é um componente do bootstrap que garante que seu layout vai ficar alinhado
+corretamente na página. Ele pode definir as margens laterais da pagina, ou deixar sem margens
+ e, tambem, posiociona o conteudo no centro do browser. O container é invisível. */
+
+ .container{
+    margin-right: auto; /* uma margem automatica p todos os lados*/
+    margin-left: auto; 
+    max-width: 960px; /* largura max*/
+    padding-right: 10px; /* espacamento direito*/
+    padding-left: 10px; /*esquerdo*/
+    width: 100%; /*largura*/
+ }
+.subcontainer-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.topico-principal{
+    font-size: 36px;
+    color: #ff4dbc;
+}
+.lista-item{
+    padding: 32px; /*espacamento dos quatro lados*/
+}
+.lista ul li{
+    margin-bottom: 32px; /*espacamento entre os itens da lsia*/
+}
+
+.lista-titulo{
+    margin-bottom: 5px;
+    font-size: 22px;
+    color: #661e4b;
+    font-weight: 700;
+}
+ .subtitulo-lista{
+    font-size: 18px;
+    color: #828282;
+    font-weight: 500;
+ }
+ .footer{
+    background-color: #724796;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+ }
+ .lista-footer{
+    color: #fff;
+    font-weight: 18px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+
+ }
+ .wrapper-portfolio{
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+ }
+ .nome-completo {
+    font-size: 36px;
+    color: #ff4dbc;
+    font-weight: 700; /*espessura*/
+    height: 45px;
+}
+
+.texto-sobre {
+    font-size: 20px;
+    line-height: 32px; /*Espaçamento entre as linhas*/
+}
+
+.profissao {
+    color: #C6B5D5;
+    height: 60px; /*altura*/
+}
